@@ -165,7 +165,7 @@ while(i >= 0){
 }
 console.log(result);
 
-// For-loop to print the Stars
+// while-loop to print the Stars
 result = '';
 count = 5;
 i= 1;
@@ -180,7 +180,7 @@ while(i<= count){
 }
 console.log(result);
 
-// for loop to print ascending Numbers
+// while loop to print ascending Numbers
 result = '';
 count = 9;
 i = 1;
@@ -195,7 +195,7 @@ while(i<= count){
 }
 console.log(result);
 
-// for loop to print ascending Same Numbers
+// while loop to print ascending Same Numbers
 result = '';
 count = 9;
 i = 1;
@@ -210,7 +210,7 @@ while(i<= count){
 }
 console.log(result);
 
-// for loop to print descending Same Numbers
+// while loop to print descending Same Numbers
 result = '';
 count = 9;
 i = count;
@@ -225,7 +225,7 @@ while(i >= 1){
 }
 console.log(result);
 
-// for loop to print descending Numbers
+// while loop to print descending Numbers
 result = '';
 count = 9;
 i = count;
@@ -240,7 +240,7 @@ while(i >= 1){
 }
 console.log(result);
 
-// for loop to print descending Numbers
+// while loop to print descending Numbers
 result = '';
 count = 9;
 i = count;
@@ -256,3 +256,135 @@ while( i >= 1){
 console.log(result);
 
 console.log('---------------------- Do While ------------------ ');
+
+// while Loop to print 0 to 10 diff 1
+result = '';
+i = 0;
+do{
+    if(i <= 9){
+        result += `${i} - `;
+    }
+    else{
+        result += `${i}`;
+    }
+    i++;
+}
+while(i<=10);
+console.log(result);
+
+// while - loop to print 20 to 0 diff 2
+result = '';
+i = 20;
+do{
+    if(i > 0){
+        result += `${i} - `;
+    }
+    else{
+        result += `${i}`;
+    }
+    i-=2;
+}
+while(i >= 0);
+console.log(result);
+
+// while-loop to print the Stars
+result = '';
+count = 5;
+i= 1;
+do{
+    let j = 1;
+    do{
+        result += '*';
+        j++;
+    }
+    while(j<= i);
+    result += `\n`;
+    i++;
+}
+while(i<= count);
+console.log(result);
+
+// while loop to print ascending Numbers
+result = '';
+count = 9;
+i = 1;
+do{
+    let j =1;
+    do{
+        result += `${j}`;
+        j++;
+    }
+    while(j <= i);
+    result += `\n`;
+    i++;
+}
+while(i<= count);
+console.log(result);
+
+// while loop to print ascending Same Numbers
+result = '';
+count = 9;
+i = 1;
+do{
+    let j =1;
+    do{
+        result += `${i}`;
+        j++;
+    }
+    while(j <= i);
+    result += `\n`;
+    i++;
+}
+while(i<= count);
+console.log(result);
+
+// while loop to print descending Same Numbers
+result = '';
+count = 9;
+i = count;
+do{
+    let j = 1;
+    do{
+        result += `${i}`;
+        j++;
+    }
+    while(j<= i);
+    result += `\n`;
+    i--;
+}
+while(i >= 1);
+console.log(result);
+
+// while loop to print descending Numbers
+result = '';
+count = 9;
+i = count;
+do{
+    let j = 1;
+    do{
+        result += `${j}`;
+        j++;
+    }
+    while(j<= i);
+    result += `\n`;
+    i--;
+}
+while(i >= 1);
+console.log(result);
+
+// while loop to print descending Numbers
+result = '';
+count = 9;
+i = count;
+do{
+    let j = i;
+    do{
+        result += `${j}`;
+        j--;
+    }
+    while(j>= 1);
+    result += `\n`;
+    i--;
+}
+while( i >= 1);
+console.log(result);
